@@ -11,7 +11,7 @@ if inputImg is None:
 
 cv.imshow("Input", inputImg)
 
-# By default OpenCV will load images as BGR, so we convert to RGB here to manipulate
+# By default OpenCV will load images as BGR, so we convert to HSV here
 imgHSV = cv.cvtColor(inputImg, cv.COLOR_BGR2HSV)
 blur = cv.GaussianBlur(imgHSV,(5,5),0)
 
